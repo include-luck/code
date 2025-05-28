@@ -41,7 +41,6 @@ int main() {
 	for (int i = 0;i < (1 << cnt);i++) {
 		dp[i] = -1;
 	}
-	cout << f((1 << cnt) - 1, 0) << "\n";
-	//cout << dp[0] << " " << dp[1] << " " << dp[2] << " " << dp[3] << " " << dp[4] << " " << dp[5] << " ";
+	cout << cnt - f((1 << cnt) - 1, 0) << "\n";
 	return 0;
 }
